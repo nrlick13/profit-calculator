@@ -1,4 +1,4 @@
-package com.profitcalculator;
+package com.moneymakingcalculator;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -14,15 +14,15 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Profit Calculator"
+	name = "Money Making Calculator"
 )
-public class ProfitCalculatorPlugin extends Plugin
+public class MoneyMakingCalculatorPlugin extends Plugin
 {
 	@Inject
 	private Client client;
 
 	@Inject
-	private ProfitCalculatorConfig config;
+	private MoneyMakingCaclulatorConfig config;
 
 	@Override
 	protected void startUp() throws Exception
@@ -46,8 +46,8 @@ public class ProfitCalculatorPlugin extends Plugin
 	}
 
 	@Provides
-	ProfitCalculatorConfig provideConfig(ConfigManager configManager)
+	MoneyMakingCaclulatorConfig provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(ProfitCalculatorConfig.class);
+		return configManager.getConfig(MoneyMakingCaclulatorConfig.class);
 	}
 }

@@ -1,11 +1,11 @@
-package com.profitcalculator;
+package com.moneymakingcalculator;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
 @ConfigGroup("example")
-public interface ProfitCalculatorConfig extends Config
+public interface MoneyMakingCaclulatorConfig extends Config
 {
 	@ConfigItem(
 		keyName = "greeting",
